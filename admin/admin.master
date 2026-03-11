@@ -1,0 +1,54 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="bg-primary d-flex justify-content-between align-items-center">
+        <h5>Welcome , <asp:Label class="fw-light" ID="lblmsg" runat="server" Text="Label"></asp:Label></h5>
+        <asp:Button class="btn btn-outline-light" style="width:100px;height:40px" ID="btnLogout" runat="server" Text="Log Out"></asp:Button>
+    </div>
+    <div style="background-color:#ffffff; width:100%; height:1px;"></div>
+    <nav class="bg-primary p-3 d-flex align-items-center justify-content-between">
+            <div>
+               <h3 style="font-family:Cursive">
+                   EB Blogs
+               </h3>
+            </div>
+            
+            <div class="d-flex">
+                <asp:TextBox ID="txtSer" runat="server" class="form-control"></asp:TextBox>&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnSer" runat="server" Text="Search" class="btn btn-light"></asp:Button>
+            </div>
+    </nav>
+    <section class="position-absolute bg-dark" style="width:15rem;height:100rem">
+        <div class="text-center pt-5">
+            <span>
+                <a style="line-height:70px" class="d-block text-decoration-none text-light">Dashboard</a>
+            </span>
+            <span>
+                <a href="category.aspx" style="line-height:70px" class="d-block text-decoration-none text-light">Category</a>
+            </span>
+            <span>
+                <a href="product.aspx" style="line-height:70px" class="d-block text-decoration-none text-light">Products</a>
+            </span>
+            <span>
+                <a style="line-height:70px" class="d-block text-decoration-none text-light">View User</a>
+            </span>
+        </div>
+    </section>
+    <div class="container w-50">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

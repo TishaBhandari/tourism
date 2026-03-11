@@ -1,0 +1,41 @@
+﻿<%@ Master Language="VB" CodeFile="client.master.vb" Inherits="client_client" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../admin/assets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="bg-success p-3 d-flex align-items-center justify-content-between">
+        <div>
+            <h1>EB Blogs</h1>
+        </div>
+        <div>
+            <span>
+                <a class="text-decoration-none text-light fs-5">Home</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <a class="text-decoration-none text-light fs-5">Products</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <a class="text-decoration-none text-light fs-5">Contact</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <a class="text-decoration-none text-light fs-5">Orders</a>
+            </span>
+        </div>
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
